@@ -105,6 +105,7 @@
                 method="POST"
                 role="form"
                 class="php-email-form"
+                id="contact-form"
               >
                 <input
                   type="hidden"
@@ -174,6 +175,11 @@
                   </div>
                 </div>
               </form>
+              <script>
+                $(document).ready(function () {
+                  $("#contact-form").validate();
+                });
+              </script>
             </div>
 
             <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
@@ -238,6 +244,7 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="assets/js/main.js"></script>
   </body>
